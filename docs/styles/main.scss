@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    div {
+        text-align: center;
+
+        img {
+            width: 35rem;
+        }
+    
+        h1 {
+            color: black;
+        }
+    
+        small {
+            font-size: large;
+        }
+    }
+}
+

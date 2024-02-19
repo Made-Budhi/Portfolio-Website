@@ -1,0 +1,17 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+body div {
+  text-align: center;
+}
+body div img {
+  width: 35rem;
+}
+body div h1 {
+  color: black;
+}
+body div small {
+  font-size: large;
+}/*# sourceMappingURL=main.css.map */
