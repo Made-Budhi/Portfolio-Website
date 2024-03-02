@@ -1,0 +1,38 @@
+nav {
+  color: var(--white);
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 1;
+  height: 100vh;
+  width: 375px;
+  background-color: var(--dark);
+  transition: 0.5s ease-in-out;
+}
+nav .nav-section {
+  color: var(--secondary-color);
+}
+nav .nav-section h6 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+nav .nav-section hr {
+  margin-top: 1.5rem;
+  border-color: var(--secondary-color);
+}
+nav .navigation {
+  list-style-type: none;
+  margin: 4rem 2rem;
+  font-size: 3rem;
+}
+nav .socials {
+  margin-top: 1rem;
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+nav .socials a {
+  color: var(--white);
+  text-decoration: none;
+}/*# sourceMappingURL=nav.css.map */
