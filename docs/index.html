@@ -6,12 +6,163 @@
     <title>Budhi | Portfolio</title>
 
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/action.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --white: white;
+            --secondary-color: rgb(153,157,158);
+            --dark: rgb(21, 21, 21);
+            --blue: rgb(69,92,233);
+            --scrollbar: #5b5b5b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .container {
+            padding: 0 15rem;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background-color: var(--secondary-color);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: var(--scrollbar);
+            border-radius: 8px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #161616;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <img src="images/construction.jpg" alt="Under Construction">
-        <h1>This website is currently under development</h1>
-        <small>@made_budhi</small>
+    <!-- 
+    SIDEBAR
+    -->
+    <input type="checkbox" name="navbar-trigger" id="navbar-trigger" hidden>
+    <nav id="nav-bar">
+        <div class="nav-section">
+            <h6>NAVIGATION</h6>
+            <hr>
+        </div>
+
+        <ul class="navigation">
+            <li>Home</li>
+            <li>Project</li> 
+            <li>Skill</li>
+            <li>About</li>
+        </ul>
+
+        <div class="nav-section">
+            <h6>SOCIALS</h6>
+        </div>
+        <div class="socials">
+            <a href="https://www.instagram.com/made_budhi" target="_blank">Instagram</a>
+            <a href="">LinkedIn</a>
+        </div>
+    </nav>
+
+    <!-- 
+    OPENING
+    
+    Profile image, name
+    -->
+    <div id="profile-container">
+        <label for="navbar-trigger" class="menu">
+            <div id="first-bar" class="bar"></div>
+            <div id="second-bar" class="bar"></div>
+        </label>
+
+        <div class="intro">
+            <h1>Software Engineering<br>Student<span>.</span></h1>
+            <p>Located at Bali, Indonesia</p>
+        </div>
+
+        <img class="profile-img shadow" src="images/budhi_pp.png" alt="">
+        <img class="profile-img" src="images/budhi_pp.png" alt="">
+        <marquee behavior="" direction="left">Made Budhi</marquee>
     </div>
+
+    <!-- 
+    ABOUT ME SECTION 
+    -->
+    <div class="about container">
+        <p>
+            Currently studying to be the best at my field, Software Engineering. Recently took 
+            interest in website development, both Front-End Development and Back-End Development. 
+        </p>
+    </div>
+
+    <!-- 
+    PROJECT LIST 
+    -->
+    <div class="project-title container">
+        <div class="nav-section">
+            <h6>RECENT PROJECT</h6>
+        </div>
+        
+        <div class="project">
+            <hr>
+
+            <!-- BROOM PROJECT -->
+            <div class="project-list">
+                <h1>BROOM PROJECT</h1>
+                <p>Project Leader & Development</p>
+            </div>
+
+            <hr>
+
+            <!-- MINDFUL SPACE -->
+            <div class="project-list">
+                <h1>Mindful-Space</h1>
+                <p>Design & Front End Development</p>
+            </div>
+
+            <hr>
+        </div>
+    </div>
+
+    <!-- 
+    FOOTER 
+    -->
+    <footer class="container">
+        <h1>Get in touch with me!</h1>
+
+        <hr>
+
+        <div>
+            <a href="mailto:madebudhi15@gmail.com" class="contact">madebudhi15@gmail.com</a>
+            <a href="https://wa.me/+628113978683" class="contact">+62 811 397 868 3</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script/mechanism.js"></script>
 </body>
 </html>

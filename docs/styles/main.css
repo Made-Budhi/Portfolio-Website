@@ -1,17 +1,130 @@
-body {
-  display: grid;
-  place-items: center;
+#profile-container {
+  background-color: rgb(153, 157, 158);
   height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
-body div {
-  text-align: center;
+#profile-container .intro {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  color: white;
+  font-size: 2rem;
+  margin-left: 8rem;
 }
-body div img {
-  width: 35rem;
+#profile-container .intro h1 {
+  line-height: 4.5rem;
 }
-body div h1 {
-  color: black;
+#profile-container .intro h1 span {
+  color: rgb(21, 21, 21);
 }
-body div small {
-  font-size: large;
+#profile-container .intro p {
+  margin-top: 3rem;
+}
+#profile-container .menu {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background-color: rgb(21, 21, 21);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  z-index: 2;
+}
+#profile-container .menu .bar {
+  height: 1px;
+  width: 2rem;
+  transition: 0.3s;
+  background-color: white;
+}
+#profile-container .menu #first-bar {
+  margin-bottom: -17px;
+  opacity: 0.5;
+}
+#profile-container .menu #second-bar {
+  margin-top: -17px;
+  opacity: 1;
+}
+#profile-container .profile-img {
+  position: absolute;
+  width: 60rem;
+  bottom: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#profile-container .shadow {
+  filter: blur(15px) opacity(0.5);
+  transform: translateX(-45%) translateY(10px);
+}
+#profile-container marquee {
+  font-size: 10rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 1vh;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 2px 0 0 0 var(--dark);
+}
+
+.about {
+  margin: 7rem 0;
+}
+.about p {
+  width: 65%;
+  text-align: justify;
+  font-size: 2rem;
+}
+
+.project-title div.nav-section h6 {
+  color: var(--secondary-color);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.project hr {
+  margin: 2.5rem -5rem;
+}
+.project .project-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project .project-list h1 {
+  transition: 0.3s ease;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.project .project-list p {
+  transition: 0.3s ease;
+}
+
+footer {
+  margin-top: 8rem;
+  padding-top: 10rem !important;
+  padding-bottom: 5rem !important;
+}
+footer h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+footer hr {
+  margin: 5rem 0;
+  opacity: 0.5;
+}
+footer div {
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+footer div a {
+  padding: 2rem 2.5rem;
+  text-decoration: none;
+  color: var(--white);
+  border: 1px solid var(--white);
+  transition: 0.3s;
 }/*# sourceMappingURL=main.css.map */

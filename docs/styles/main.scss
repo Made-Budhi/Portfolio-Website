@@ -1,22 +1,160 @@
-body {
-    display: grid;
-    place-items: center;
+$white: white;
+$secondaryColor: rgb(153,157,158);
+$dark: rgb(21, 21, 21);
+
+// Styling for profile
+#profile-container {
+    background-color: $secondaryColor;
     height: 100vh;
+    position: relative;
+    overflow: hidden;
 
-    div {
-        text-align: center;
-
-        img {
-            width: 35rem;
-        }
-    
+    .intro {
+        position: absolute;
+        left: 0;
+        bottom: 50%;
+        color: $white;
+        font-size: 2rem;
+        margin-left: 8rem;
+        
         h1 {
-            color: black;
+            line-height: 4.5rem;
+
+            span {
+                color: $dark;
+            }
         }
-    
-        small {
-            font-size: large;
+
+        p {
+            margin-top: 3rem;
+        }
+
+    }
+
+    .menu {
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        background-color: $dark;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: .3s ease-in-out;
+        z-index: 2;
+
+        .bar {
+            height: 1px;
+            width: 2rem;
+            transition: .3s;
+            background-color: $white;
+        }
+
+        #first-bar {
+            margin-bottom: -17px;
+            opacity: .5;
+        }
+
+        #second-bar {
+            margin-top: -17px;
+            opacity: 1;
+        }
+    }
+
+    .profile-img {
+        position: absolute;
+        width: 60rem;
+        bottom: -5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .shadow {
+        filter: blur(15px)
+                opacity(.5);
+        transform: translateX(-45%)
+                    translateY(10px);
+    }
+
+    marquee {
+        font-size: 10rem;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 1vh;
+        position: absolute;
+        bottom: 0;
+        box-shadow: 2px 0 0 0 var(--dark);
+    }
+}
+
+.about {
+    margin: 7rem 0;
+
+    p {
+        width: 65%;
+        text-align: justify;
+        font-size: 2rem;
+    }
+}
+
+.project-title {
+    div.nav-section h6 {
+        color: var(--secondary-color);
+        font-size: .75rem;
+        font-weight: 500;
+    }
+}
+
+.project {
+    hr {
+        margin: 2.5rem -5rem;
+    }
+
+    .project-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        h1 {
+            transition: .3s ease;
+            font-size: 4rem;
+            font-weight: 500;
+        }
+
+        p {
+            transition: .3s ease;
         }
     }
 }
 
+footer {
+    margin-top: 8rem;
+    padding-top: 10rem !important;
+    padding-bottom: 5rem !important;
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 400;
+    }
+
+    hr {
+        margin: 5rem 0;
+        opacity: .5;
+    }
+
+    div {
+        display: flex;
+        column-gap: 2rem;
+
+        a {
+            padding: 2rem 2.5rem;
+            text-decoration: none;
+            color: var(--white);
+            border: 1px solid var(--white);
+            transition: .3s;
+        }
+    }
+}
